@@ -33,4 +33,5 @@ This project requires no installation or build steps.
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/your-username/sorting-visualizer.git](https://github.com/your-username/sorting-visualizer.git)
+   git clone [https://github.com/satyam0709/sorting-visualizer.git]
+
