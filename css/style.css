@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #151518; /* Dark Background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+header {
+    background-color: #1e1e24;
+    padding: 15px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #333;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.slider-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider-group p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+/* --- ROW 2: ALGORITHMS --- */
+.row-algos {
+    display: flex;
+    justify-content: center;
+}
+
+.algos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+input[type=range] {
+    -webkit-appearance: none; 
+    background: transparent; 
+    width: 120px; 
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background: #444;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #00f0ff;
+    box-shadow: 0 0 10px #00f0ff;
+    cursor: pointer;
+    margin-top: -7px;
+}
+
+/* =========================================
+   4. BUTTONS
+   ========================================= */
+button {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #4361ee;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: #4361ee;
+    box-shadow: 0 0 15px rgba(67, 97, 238, 0.4);
+}
+
+.butt_selected {
+    background-color: #4361ee !important;
+    color: white !important;
+    box-shadow: 0 0 15px rgba(67, 97, 238, 0.6);
+}
+
+button:disabled {
+    border-color: #555;
+    color: #777;
+    cursor: not-allowed;
+    background: transparent;
+}
+
+#voice_btn {
+    border-color: #ffd700;
+    color: #ffd700;
+}
+
+#voice_btn:hover, #voice_btn.active {
+    background: #ffd700;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* =========================================
+   5. TEXT INPUT
+   ========================================= */
+.input-group input {
+    background: #111;
+    border: 1px solid #4361ee;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    width: 100px;
+    font-size: 0.8rem;
+    outline: none;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 8px rgba(67, 97, 238, 0.5);
+}
+
+/* =========================================
+   6. VISUALIZATION CONTAINER
+   ========================================= */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-grow: 1;
+    margin: 20px 0;
+}
+
+#array_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 90%;
+    height: 55vh;
+    border-bottom: 2px solid #333;
+}
+
+#array_container > div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5); 
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    transition: 0.1s;
+    overflow: visible; /* Keeps numbers visible */
+}
+
+/* --- UPDATED NUMBER STYLING --- */
+#array_container > div > span {
+    font-size: 0.9rem; /* Increased Size */
+    font-weight: 800;  /* Extra Bold */
+    color: #000000;    /* Black Text */
+    margin-bottom: 5px;
+    display: block; 
+    /* White glow to make black text readable on blue/red bars */
+    text-shadow: 0px 0px 3px #ffffff, 0px 0px 5px #ffffff; 
+    z-index: 10;
+}
+
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#Info_Cont1, #Info_Cont2 {
+    flex: 1;
+    background: #1e1e24;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+h3 {
+    color: #4361ee;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.Complexity_Containers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Pair_Definitions p {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.Sub_Heading {
+    font-weight: bold;
+    color: #fff !important;
+}
+
+#Time_Best, #Time_Average, #Time_Worst, #Space_Worst {
+    color: #ff4757;
+    font-weight: bold;
+}
+
+/* =========================================
+   8. FOOTER
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e24;
+    color: #888;
+    margin-top: auto;
+    font-size: 0.8rem;
+    border-top: 1px solid #333;
+}
