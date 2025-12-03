@@ -45,13 +45,32 @@ It also includes:
 
 ---
 
-## ⚙️ How to Run Locally
+⚙️ Running the Project Locally
 
-No installation. No build. Just open the HTML file.
-
-```sh
-# Clone the repository
+No installation or build process needed.
+Clone the repository
 git clone https://github.com/your-username/sorting-visualizer.git
-
-# Navigate into the folder
+Navigate inside the folder
 cd sorting-visualizer
+Open the application
+Double-click index.html, or
+Use Live Server in VS Code for smoother performance
+
+-----
+
+🎮 Usage Guide
+
+Generate Array:
+Click Random Array or type your own numbers.
+Adjust Speed:
+Level 1 → Slowest, detailed voice narration
+Level 5 → Fastest, minimal narration
+Choose Algorithm:
+Select any algorithm from the top menu.
+Voice Toggle:
+Click the 🔊 button to enable or disable narration.
+Note: Detailed step-by-step voice instructions only run at speed level 1 to avoid browser lag.
+
+
+<img width="1090" height="617" alt="image" src="https://github.com/user-attachments/assets/16311101-bed4-4677-996f-4bea6716db90" />
+
