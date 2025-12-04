@@ -1,8 +1,6 @@
 # ⚡ Sorting Visualizer with Voice Assistant
 
-![Sorting Visualizer Screenshot](screenshot.png)
----
-
+https://satyam0709.github.io/Sorting-Visualizer/
 
 An interactive web application to visualize how sorting algorithms work in real-time.  
 It includes a built-in **Voice Assistant** that narrates comparisons, swaps, and merge operations step-by-step.
@@ -76,5 +74,10 @@ Note: Detailed step-by-step voice instructions only run at speed level 1 to avoi
 --------
 
 <img width="1090" height="617" alt="image" src="https://github.com/user-attachments/assets/16311101-bed4-4677-996f-4bea6716db90" />
+
+
+-----
+![Sorting Visualizer Screenshot](screenshot.png)
+
 
 
